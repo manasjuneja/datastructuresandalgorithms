@@ -18,3 +18,15 @@ class linkedlist:
 
         cur.next = new_node
 
+
+    def read(self):
+        reader = []
+
+        cur = self.head
+
+        while cur.next != None:
+            cur = cur.next
+            reader.append(cur.data)
+
+        print(reader)
+
