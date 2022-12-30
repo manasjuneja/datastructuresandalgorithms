@@ -8,3 +8,13 @@ class linkedlist:
     def __init__(self):
         self.head = node()
 
+
+    def append(self,data):
+        new_node = node(data)
+
+        cur = self.head
+        while cur.next != None:
+            cur = cur.next
+
+        cur.next = new_node
+
