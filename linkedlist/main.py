@@ -30,3 +30,9 @@ class linkedlist:
 
         print(reader)
 
+
+    def delete(self,index):
+        cur_index = 0
+        cur = self.head
+
+
