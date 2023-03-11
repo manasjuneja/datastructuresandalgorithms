@@ -15,3 +15,17 @@ def getlength(node):
 
     return count
 
+
+def findindex(node, value):
+    cur = node
+
+    ind = 0
+
+    while cur.next != None :
+        cur = cur.next
+        ind += 1
+        if cur.val == value:
+            break
+
+    return ind
+
