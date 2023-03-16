@@ -29,3 +29,15 @@ def findindex(node, value):
 
     return ind
 
+
+def deletenode(node, index):
+    cur = node
+
+    ind = 0
+
+    while cur.next != None :
+        temp = cur
+        cur = cur.next
+        ind += 1
+        if ind == index :
+            temp.next = cur.next
