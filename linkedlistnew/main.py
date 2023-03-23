@@ -41,3 +41,14 @@ def deletenode(node, index):
         ind += 1
         if ind == index :
             temp.next = cur.next
+
+
+
+def update(node, value, newvalue):
+    cur = node
+
+    while cur.next != None :
+        cur = cur.next
+        if cur.val == value :
+            cur.val == newvalue
+
