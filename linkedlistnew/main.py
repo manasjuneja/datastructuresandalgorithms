@@ -52,3 +52,12 @@ def update(node, value, newvalue):
         if cur.val == value :
             cur.val == newvalue
 
+
+def append(node, newnode):
+    cur = node
+
+    while cur.next != None :
+        cur = cur.next
+
+    cur.next = newnode
+
